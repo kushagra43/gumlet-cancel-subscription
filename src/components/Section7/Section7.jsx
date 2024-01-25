@@ -15,40 +15,51 @@ const Section7 = () => {
 
   const slides = [
     {
-      description: ` " What a breath of fresh air! I've looked at a number of video hosting apps, none of which convinced me to drop Vimeo even with the lifetime deal. But 5 minutes working with Gumlet and I am so stoked! Beautiful, clean, intuitive interface. Bye Vimeo never really cared for you anyway!" `,
-      name: "Lilly Smith",
-      designation: "Entrepreneur",
+      description: `"Worth every last penny" We have a website and clients who require a lot of videos to be uploaded, we didn't want to spend money on Vimeo etc, the cost of it just doesn't make any sense to us. We saw Gumlet and it's got exactly what we need - plenty of storage to upload 100s if not 1000s of videos. Blazing speed and easy integration into WordPress.
+
+      `,
+      name: "Sean H.",
+      designation: "Lead Web Designer",
     },
     {
-      description: `"Gumlet best video hosting platform Gumlet is a way to stay away from YouTube and Vimeo. Great product, great performance, great experience video streaming, fast delivery, cost effective with lots of storage and features. You even get statistics for your videos. Gumlet also help with your images."
+      description: `What a breath of fresh air! I've looked at a number of video hosting apps here on Appsumo, none of which convinced me to drop Vimeo even with the lifetime deal. But 5 minutes working with Gumlet and I am so stoked! Beautiful, clean, intuitive interface. Super easy to use yet with all the bells and whistles needed to manage videos. Bye Vimeo never really cared for you anyway!
+
+
+`,
+      name: "Lilly Smith ",
+      designation: "Business Owner",
+    },
+    {
+      description: `"Great Vimeo Alternative" Its an exceptional video hosting platform that surpasses expectations and will replace Vimeo in my book. The platform's quick optimization process and detailed analytics provide valuable insights. I hope they remain and grow in the market place.
+`,
+      name: "Tyler G",
+      designation: "Director of Strategic Accounts",
+    },
+    {
+      description: `"Gumlet best video hosting platform" Gumlet is a way to stay away from YouTube and Vimeo. Great product, great performance, great experience video streaming, fast delivery, cost effective with lots of storage and features. You even get statistics for your videos. Gumlet also help with your images.
 `,
       name: "Corinne N.",
       designation: "Business Owner",
     },
     {
-      description: `"Gumlet is an incredible platform Gumlet offers an easy and efficient way to optimize and deliver images on websites. Gumlet’s CDN ensures fast image loading and improved website performance. The API integration also allows for seamless implementation into existing workflows."
-`,
-      name: "Carla D.",
-      designation: "Small Business Owner",
-    },
-    {
-      description: `"A great alternative to Vimeo, Adilo, or even Wistia. What I appreciated most was its user-centric approach to video hosting. The platform's fast and quick loading times, comprehensive metrics, and reasonable cost structure provided the efficiency and affordability I was seeking in a video hosting service."
-`,
-      name: "Carla D.",
-      designation: "Small Business Owner",
-    },
-    {
       description: `"Great Vimeo Alternative Its an exceptional video hosting platform that surpasses expectations and will replace Vimeo in my book. The platform's quick optimization process and detailed analytics provide valuable insights. I hope they remain and grow in the market place."
 `,
-      name: "Carla D.",
-      designation: "Small Business Owner",
+      name: "Julie",
+      designation: "Course Creator",
+    },
+    {
+      description: `"Excellent video!" Aditya and the Gumlet team have a clear vision and promise to their users. They strive to empower you with complete control over your videos, ensuring no unauthorized ads, branding, or access without your permission. With their sights set on becoming the default video infrastructure for the internet, Gumlet is just getting started, and I couldn't be more excited to join them on this journey.
+
+`,
+      name: "Karla",
+      designation: "Content Head",
     },
   ];
 
   const CustomPrevArrow = (props) => (
     <button {...props} className="slick-prev h-8 w-8">
-    <img src={left} alt="" className=" absolute right-3 bottom-10" />
-  </button>
+      <img src={left} alt="" className=" absolute right-3 bottom-10" />
+    </button>
   );
 
   const CustomNextArrow = (props) => (
@@ -78,7 +89,7 @@ const Section7 = () => {
       />
     );
   }
-  
+
 
   const settings = {
     infinite: true,
@@ -99,7 +110,7 @@ const Section7 = () => {
   return (
     <div className="mb-12 mt-12">
       <div className="flex justify-center items-center text-center font-bold text-4xl">
-        <h1>See What People are Saying About Us</h1>
+        <h1>See What People Are Saying About Us</h1>
       </div>
       {/* Slider container */}
       <div className="w-[85%] m-auto">

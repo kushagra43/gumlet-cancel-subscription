@@ -2,6 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
+    <script>
+      const RudderAnalytics = require("@rudderstack/rudder-sdk-node");
+      const client = new RudderAnalytics("2ZBQbJSHDomvyvEE9F8r7d4b56i", {
+        dataPlaneUrl: "https://gumletadiwyaq.dataplane.rudderstack.com",
+      });
+    </script>
+
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -29,7 +37,6 @@
     />
   </head>
   <body>
-    
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-KPS353Z"

@@ -5,43 +5,8 @@ import axios from "axios";
 import { Helmet } from "react-helmet-async";
 
 const Section1 = ({ targetSectionRef }) => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
 
-  // const handleSubmit = async () => {
-  //   if (!email) {
-  //     console.error("Please enter your email address");
-  //     return;
-  //   }
-  //   const url = "https://gumlet-team.myfreshworks.com/crm/sales/api/contacts";
-  //   const jsonPayload = {
-  //     contact: {
-  //       email: email,
-  //     },
-  //   };
-  //   const headers = {
-  //     Authorization: "Token token=eQFEevSnl2SGx4uFBp1X8g",
-  //     "Content-Type": "application/json",
-  //   };
-  //   setLoading(true);
 
-  //   try {
-  //     const response = await axios.post(url, jsonPayload, { headers });
-  //     console.log("Success:", response.data);
-  //   } catch (error) {
-  //     console.error("Error:", error.message);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (window.GumletForm) {
-  //     console.log("Gumlet form script loaded successfully!");
-  //   } else {
-  //     console.log("Error loading Gumlet form script.");
-  //   }
-  // }, []);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -54,7 +19,6 @@ const Section1 = ({ targetSectionRef }) => {
     document.head.appendChild(script);
 
     return () => {
-      // Cleanup: remove the script when the component is unmounted
       document.head.removeChild(script);
     };
   }, []);
@@ -75,14 +39,9 @@ const Section1 = ({ targetSectionRef }) => {
               that ensures buffer-free video delivery with each view.
             </span>
             <div className=" flex md:flex-wrap  bg-white rounded-full">
-              <Helmet>
-                <script
-                  src="https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js"
-                  crossOrigin="anonymous"
-                  id="fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b"
-                ></script>
-              </Helmet>
             </div>
+          </div>
+          <div className="md:ml-12 ml-6 mt-6 md:w-2/5 w-4/5 items-center">
           </div>
         </div>
         <div className="flex justify-center items-center mt-3 ">
